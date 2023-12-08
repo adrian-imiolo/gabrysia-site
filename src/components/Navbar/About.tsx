@@ -1,9 +1,11 @@
+import gabraImg from "../../assets/zdj_about.png"
+
 function About() {
   return (
     <section className="about">
       <div className="about-container">
         <div className="about-box">
-        <img src="../src/assets/zdj_about.png" alt="Picture of Gabriela Urszulak" />
+        <img src={gabraImg} alt="Picture of Gabriela Urszulak" />
 
         </div>
         <div className="about-box">
