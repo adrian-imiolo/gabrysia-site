@@ -1,7 +1,6 @@
 // import DropDownMenu from "../components/Navbar/DropDownMenu";
 import Logo from "../components/Navbar/Logo"
 // import MenuItems from "../components/Navbar/MenuItems"
-import { useState, useEffect } from 'react'
 import { Link } from 'react-scroll'
 
 
