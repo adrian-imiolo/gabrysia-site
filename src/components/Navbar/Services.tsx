@@ -1,7 +1,7 @@
 function Services() {
   return (
     <section className="services">
-      <h2>Główne obszary działania</h2>
+      <h2>GŁÓWNE OBSZARY DZIAŁANIA</h2>
       <div className="services-container">
         <div className="services-box">
           <h3>Prawo cywilne</h3>

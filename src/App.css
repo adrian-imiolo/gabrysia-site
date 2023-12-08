@@ -135,7 +135,7 @@ section {
   text-align: center;
 }
 
-.services > h2{
+.services > h2 {
   margin: 20px 0;
   position: relative;
   z-index: 1;
@@ -180,3 +180,64 @@ section {
   margin-top: 0;
   color: #4b6d0e;
 }
+
+
+/* Prices */
+
+.prices {
+  background-color: #4b6d0e;
+  margin: 0;
+  color: #fff;
+  padding: 20px 30px;
+}
+
+.prices-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.prices-container > p {
+  margin-bottom: 10px;
+}
+
+.prices-container > h3 {
+  margin: 20px 0;
+  color: #ffb400;
+  position: relative;
+  z-index: 1;
+  font-size: 2em;
+  text-align: center;
+}
+
+.prices-container > h3:before {
+  content: "";
+  position: absolute;
+  left: 42.5%;
+  bottom: -5px;
+  height: 2px;
+  width: 15%;
+  border-bottom: 3px solid #ffb400;
+
+}
+
+
+.prices-container > h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.prices-container > ul {
+  list-style-type: none;
+}
+
+.prices-container > ul  li:before {
+  content: '\2014';
+}
+
+.prices-container > ol li {
+  margin-left: 5px;
+}
+
+
+/* Contact */
+
