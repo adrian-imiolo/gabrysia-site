@@ -16,9 +16,6 @@ function App() {
         <Services />
         <Prices />
         <Contact />
-      <footer>
-        This is footer
-      </footer>
     </>
   )
 }

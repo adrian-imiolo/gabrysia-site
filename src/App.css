@@ -59,8 +59,6 @@
 }
 
 section {
-  margin: 10px;
-  border: 0.1px solid black
 }
 
 
@@ -241,3 +239,29 @@ section {
 
 /* Contact */
 
+.contact-container {
+  margin: 30px auto;
+  width: 70%;
+  text-align: center;
+
+}
+
+.contact-container > h1 {
+  color: #4b6d0e;
+  margin: 10px;
+}
+
+.contact-container > p {
+  margin: 15px;
+
+}
+
+.contact-info {
+  text-align: left;
+}
+
+.contact-info > h6 {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+} 
