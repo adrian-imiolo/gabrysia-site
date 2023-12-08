@@ -7,7 +7,7 @@ function About() {
 
         </div>
         <div className="about-box">
-          <h3>Parę słów o mnie</h3>
+          <h3>KILKA SŁÓW O MNIE</h3>
           <h5>Jak zostałam adwokatem?</h5>
           <p className="about-p">O byciu prawnikiem marzyłam od dziecka i konsekwentnie ten plan realizowałam. Bywały chwile
           lepsze i gorsze, pojawiały się inne marzenia - jak zostanie geodetą, reporterką w dziale mody czy

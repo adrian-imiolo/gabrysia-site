@@ -13,9 +13,9 @@ function App() {
     <>
         <Navbar />
         <About />
-        {/* <Services />
+        <Services />
         <Prices />
-        <Contact /> */}
+        <Contact />
       <footer>
         This is footer
       </footer>
