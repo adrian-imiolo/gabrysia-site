@@ -132,5 +132,51 @@ section {
 /* Services */
 
 .services {
-  align-items: center;
+  text-align: center;
+}
+
+.services > h2{
+  margin: 20px 0;
+  position: relative;
+  z-index: 1;
+
+}
+
+.services > h2:before {
+  content: "";
+  position: absolute;
+  left: 42.5%;
+  bottom: -5px;
+  height: 2px;
+  width: 15%;
+  border-bottom: 3px solid #4b6d0e;
+
+}
+
+.services-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  row-gap: 20px;
+  column-gap: 10px;
+  align-self: center;
+}
+
+.services-box {
+  border: 3px solid #ffb400;
+  border-radius: 50px;
+  padding: 10px;
+  width: 450px;
+  height: 450px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.services-box > h3 {
+  margin-bottom: 10px;
+  margin-top: 0;
+  color: #4b6d0e;
 }
