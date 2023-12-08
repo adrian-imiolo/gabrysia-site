@@ -23,7 +23,7 @@ function Navbar() {
   // }, []);
   return (
         <nav className="navbar">
-          <div className="container">
+          <div>
             <div className="logo">
               <Logo />
             </div>
@@ -31,19 +31,16 @@ function Navbar() {
           <div>
             <ul className="nav-elements">
               <li>
-                <Link activeClass="active" smooth spy to="about">O mnie</Link>
+                <Link activeClass="active" smooth spy to="about">O MNIE</Link>
               </li>
               <li>
-                <Link activeClass="active" smooth spy to="services">Zakres usług</Link>
+                <Link activeClass="active" smooth spy to="services">ZAKRES USŁUG</Link>
               </li>
               <li>
-                <Link activeClass="active" smooth spy to="prices">Honorarium</Link>
+                <Link activeClass="active" smooth spy to="prices">HONORARIUM</Link>
               </li>
-              {/* <li>
-                <Link activeClass="active" smooth spy to="online-tips">Porady Online</Link>
-              </li> */}
               <li>
-                <Link activeClass="active" smooth spy to="contact">Kontakt</Link>
+                <Link activeClass="active" smooth spy to="contact">KONTAKT</Link>
               </li>
             </ul>
           </div>
