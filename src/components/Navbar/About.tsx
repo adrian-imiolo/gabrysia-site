@@ -11,13 +11,11 @@ function About() {
         <div className="about-box">
           <h3>KILKA SŁÓW O MNIE</h3>
           <h5>Jak zostałam adwokatem?</h5>
-          <p className="about-p">O byciu prawnikiem marzyłam od dziecka i konsekwentnie ten plan realizowałam. Bywały chwile
+          <p>O byciu prawnikiem marzyłam od dziecka i konsekwentnie ten plan realizowałam. Bywały chwile
           lepsze i gorsze, pojawiały się inne marzenia - jak zostanie geodetą, reporterką w dziale mody czy
           krytykiem filmowym, ale prawo ostatecznie wygrało. Dziś prowadzę indywidualną kancelarię
           adwokacką w centrum Wrocławia i realizuję dzięki temu dalszy etap zrodzonego ponad 20 lat temu
           marzenia - możliwość realnej pomocy innym.</p>
-        </div>
-        <div className="about-box">
           <h5>Doświadczenie i umiejętności</h5>
               <p>W 2019 r. ukończyłam studia stacjonarne prawa na Wydziale Prawa, Administracji i Ekonomii
     Uniwersytetu Wrocławskiego. Obroniłam pracę magisterską pt. „Prywatność człowieka jako dobro
@@ -29,8 +27,6 @@ function About() {
     prowadzonymi przez doświadczonych adwokatów - mec. Joanną Palacz, mec. Michałem
     Młyńczakiem oraz mec. Mateuszem Cymą, z którymi współpracuję do dziś. Od 2020 r. jestem
     członkinią Izby Adwokackiej we Wrocławiu.</p>
-        </div>
-        <div className="about-box">
           <h5>Jak pracuję?</h5>
           <p>W mojej pracy cenię sobie różnorodność i nieszablonowość. Zajmuję się sprawami z różnych dziedzin
 prawa, co ważne, świadczę również pomoc prawną w języku angielskim, czego potwierdzeniem jest
@@ -43,6 +39,7 @@ to, aby te problemy rozwiązać, a moim Klientom zapewnić spokój. Uważam, że
 współpracy istotne są kwestie wzajemnego zaufania, jasnej komunikacji oraz określenia jej
 warunków. Do każdej z powierzonych spraw przygotowuję się indywidualnie, gdyż nie ma dwóch
 takich samych przypadków, a każdą z nich prowadzę z należytym zaangażowaniem.</p>
+<h6>Zapraszam do współpracy!</h6>
         </div>
       </div>
     </section>

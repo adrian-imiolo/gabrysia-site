@@ -12,13 +12,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 1em;
-  /* background-color: #4b6d0e; */
+  /* background-color: #00492E; */
   /* color: #000000;
 } */ 
  
 .navbar {
   font-weight: 400;
-  color: #4b6d0e;
+  color: #00492E;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,7 +51,7 @@
 
 .nav-elements li:hover:not(.active) {
   text-decoration: underline;
-  text-decoration-color: #4b6d0e;
+  text-decoration-color: #00492E;
 }
 
 .logo {
@@ -62,43 +62,58 @@
 /* About section */
 
 .about {
-  background-color: #4b6d0e;
+  background-color: #00492E;
   margin: 0;
 }
 
 .about-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+/* .about-container {
   margin: 20px auto;
   width: 100%;
   display: grid;
+  justify-items: center;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-auto-rows: 1fr;
   grid-column-gap: 20px;
   align-items: center;
-}
+} */
 
 .about-box {
     padding: 20px;
     border-radius: 10px;
     max-width: 50vw;
-    text-align: center;
-
+    align-self: center;
 }
 
 .about-box > h3 {
   font-size: 1.75em;
   margin-bottom: 50px;
-  color: #ffb400;
+  color: #CF9831;
 }
 
 .about-box > h5 {
   font-size: 1.3em;
   margin-bottom: 20px;
+  margin-top: 20px;
   color: #fff;
 }
 
 .about-box > p {
   color: #fff;
+  text-justify: auto;
+  text-align: justify;
+}
+
+.about-box h6 {
+  color: #CF9831;
+  margin-top: 20px;
+  font-size: 1.3em;
 }
 
 .about-p {
@@ -141,7 +156,7 @@
   bottom: -5px;
   height: 2px;
   width: 15%;
-  border-bottom: 3px solid #4b6d0e;
+  border-bottom: 3px solid #00492E;
 
 }
 
@@ -157,7 +172,7 @@
 }
 
 .services-box {
-  border: 3px solid #ffb400;
+  border: 3px solid #CF9831;
   border-radius: 50px;
   padding: 10px;
   width: 450px;
@@ -171,14 +186,21 @@
 .services-box > h3 {
   margin-bottom: 10px;
   margin-top: 0;
-  color: #4b6d0e;
+  color: #00492E;
+}
+
+.services-box > p {
+  padding: 10px;
+  text-justify: auto;
+  text-align: justify;
+  font-size: 0.825em;
 }
 
 
 /* Prices */
 
 .prices {
-  background-color: #4b6d0e;
+  background-color: #00492E;
   margin: 0;
   color: #fff;
   padding: 20px 30px;
@@ -195,7 +217,7 @@
 
 .prices-container > h3 {
   margin: 20px 0;
-  color: #ffb400;
+  color: #CF9831;
   position: relative;
   z-index: 1;
   font-size: 2em;
@@ -209,7 +231,7 @@
   bottom: -5px;
   height: 2px;
   width: 15%;
-  border-bottom: 3px solid #ffb400;
+  border-bottom: 3px solid #CF9831;
 
 }
 
@@ -242,7 +264,7 @@
 }
 
 .contact-container > h1 {
-  color: #4b6d0e;
+  color: #00492E;
   margin: 10px;
 }
 
