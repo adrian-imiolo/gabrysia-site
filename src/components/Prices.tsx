@@ -85,7 +85,8 @@ stanowi to dodatkową gwarancję mojego pełnego zaangażowania w prowadzeniu je
         </ul>
         <br/>
         
-  
+  <hr />
+  <br />
   <p>Pozostałe informacje:</p>
   <ul className="prices-addinfo">
     <li>do ustalonej kwoty wynagrodzenia doliczam podatek od towarów i usług (VAT), wynoszący
@@ -95,8 +96,8 @@ stanowi to dodatkową gwarancję mojego pełnego zaangażowania w prowadzeniu je
   kosztów tłumaczeń oraz podróży rozliczanej według stawki kilometrowej,</li>
   <li>
   wynagrodzenie z tytułu świadczonych usług może być uiszczone w formie gotówkowej
-  bądź przelewu bankowego. Numer rachunku bankowego: 31 1090 1955 0000 0001 5577
-  5413 Santander S.A.
+  bądź przelewu bankowego. Numer rachunku bankowego: <strong>31 1090 1955 0000 0001 5577
+  5413</strong> Santander S.A.
   </li>
   <li>wynagrodzenie jest płatne z góry, jednakże możemy podzielić je na raty</li>
   </ul>
