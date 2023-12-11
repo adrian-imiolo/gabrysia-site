@@ -72,11 +72,22 @@ function Prices() {
   </ol>
   <br />
   </li>
+  <li>
+    <p>
+    <strong>wynagrodzenie za osiągnięcie celu (Success fee)</strong> – korzystam również z modelu
+wynagrodzenia obejmującego premię za sukces. Jest ona płatna przez Klienta obok jednego
+z ww. modeli wynagrodzenia tylko w sytuacji uzyskania korzystnego dla Klienta
+rozstrzygnięcia. Osobiście, jest to dla mnie dodatkowy czynnik motywujący, a dla Klienta
+stanowi to dodatkową gwarancję mojego pełnego zaangażowania w prowadzeniu jego spraw
+    </p>
+  </li>
+  
         </ul>
+        <br/>
         
   
   <p>Pozostałe informacje:</p>
-  <ul>
+  <ul className="prices-addinfo">
     <li>do ustalonej kwoty wynagrodzenia doliczam podatek od towarów i usług (VAT), wynoszący
   aktualnie w przypadku usług prawnych 23%,</li>
   <li>moje wynagrodzenie Kancelarii nie obejmuje kosztów związanych koniecznością
