@@ -1,10 +1,10 @@
 import './App.css'
 import Navbar from './Layout/Navbar'
-import About from './components/Navbar/About'
-import Contact from './components/Navbar/Contact'
+import About from './components/About'
+import Contact from './components/Contact'
 // import OnlineTips from './components/Navbar/OnlineTips'
-import Prices from './components/Navbar/Prices'
-import Services from './components/Navbar/Services'
+import Prices from './components/Prices'
+import Services from './components/Services'
 
 
 function App() {

@@ -15,30 +15,33 @@ function Prices() {
         <br />
         <p>Potrzeby każdego Klienta są różne, wobec tego stosuję następujące modele wynagradzania:</p>
         <ul>
-          <li>wynagrodzenie stałe (ryczałt) – w przypadku realizacji części usług już na początku jestem
+          <br />
+          <li><strong>wynagrodzenie stałe (ryczałt)</strong>  – w przypadku realizacji części usług już na początku jestem
   w stanie przewidzieć, jaki będzie mój nakład pracy przy danej sprawie. Przy wyborze tego
   wynagrodzenia kwota jest ustalana z góry i jest niezmienna przez cały czas trwania
   prowadzenia sprawy. Wynagrodzenie to obejmuje wszystkie czynności, jakie wykonam w
   trakcie pracy nad daną sprawą;</li>
-          <li>wynagrodzenie godzinowe – kiedy nie jestem w stanie przewidzieć, jaką konkretną ilość
+  <br />
+          <li><strong>wynagrodzenie godzinowe</strong> – kiedy nie jestem w stanie przewidzieć, jaką konkretną ilość
   godzin poświęcę wykonując pracę dla Klienta, wybieram tę opcję ustalania wynagrodzenia. Z
   doświadczenia wiem, że ten model wynagrodzenia jest wybierany przez Klientów wtedy,
   kiedy chcą skorzystać z usług Kancelarii w przypadku pojedynczych zagadnień prawnych
   bądź nie potrzebują stałej pomocy prawnej nad daną sprawą. Stawka za godzinę pracy jest
   również ustalana z Klientem;</li>
-          <li>wynagrodzenie mieszane – jest to połączenie dwóch powyższych wynagrodzeń, w sytuacji
+  <br/>
+          <li><strong>wynagrodzenie mieszane</strong> – jest to połączenie dwóch powyższych wynagrodzeń, w sytuacji
   w której ustalam z Klientem wynagrodzenie ryczałtowe z określonym limitem godzin pracy
   nad jego sprawą. Po przekroczeniu tego limitu, dalsze rozliczenie usług jest dokonywane na
   podstawie uzgodnionej stawki godzinowej</li>
-          <li>wynagrodzenie uzależnione od wartości przedmiotu sporu – jest to model wynagrodzenia,
+  <br/>
+          <li><strong>wynagrodzenie uzależnione od wartości przedmiotu sporu</strong> – jest to model wynagrodzenia,
   który stosuję w sprawach o zapłatę zgodnie z Rozporządzeniem Ministra Sprawiedliwości z
-  dnia 22 października 2015 r. w sprawie opłat za czynności adwokackie</li>
-        </ul>
-        <br />
+  dnia 22 października 2015 r. w sprawie opłat za czynności adwokackie
         <p>
+          <br />
         Stawki minimalne wynoszą przy wartości przedmiotu sprawy:
         </p>
-        <ol>
+        <ol className="prices-ol">
           <li>do 500 zł - 90 zł;</li>
           <li>powyżej 500 zł do 1500 zł - 270 zł;</li>
           <li>powyżej 1500 zł do 5000 zł - 900 zł;</li>
@@ -68,25 +71,26 @@ function Prices() {
     <li>powyżej 200 000 zł - 7200 zł</li>
   </ol>
   <br />
+  </li>
+        </ul>
+        
   
   <p>Pozostałe informacje:</p>
-  <p>
-  - wynagrodzenie za osiągnięcie celu (Success fee) - korzystam również z modelu
-  wynagrodzenia obejmującego premię za sukces. Jest ona płatna przez Klienta obok jednego
-  z ww. modeli wynagrodzenia tylko w sytuacji uzyskania korzystnego dla Klienta
-  rozstrzygnięcia. Osobiście, jest to dla mnie dodatkowy czynnik motywujący, a dla Klienta
-  stanowi to dodatkową gwarancję mojego pełnego zaangażowania w prowadzeniu jego spraw
-
-  Pozostałe informacje:
-  - do ustalonej kwoty wynagrodzenia doliczam podatek od towarów i usług (VAT), wynoszący
-  aktualnie w przypadku usług prawnych 23%,
-  - moje wynagrodzenie Kancelarii nie obejmuje kosztów związanych koniecznością
+  <ul>
+    <li>do ustalonej kwoty wynagrodzenia doliczam podatek od towarów i usług (VAT), wynoszący
+  aktualnie w przypadku usług prawnych 23%,</li>
+  <li>moje wynagrodzenie Kancelarii nie obejmuje kosztów związanych koniecznością
   uiszczania opłat sądowych, opłat kancelaryjnych i skarbowych, kosztów administracyjnych,
-  kosztów tłumaczeń oraz podróży rozliczanej według stawki kilometrowej,
-  - wynagrodzenie z tytułu świadczonych usług może być uiszczone w formie gotówkowej
+  kosztów tłumaczeń oraz podróży rozliczanej według stawki kilometrowej,</li>
+  <li>
+  wynagrodzenie z tytułu świadczonych usług może być uiszczone w formie gotówkowej
   bądź przelewu bankowego. Numer rachunku bankowego: 31 1090 1955 0000 0001 5577
   5413 Santander S.A.
-  - wynagrodzenie jest płatne z góry, jednakże możemy podzielić je na raty</p>
+  </li>
+  <li>wynagrodzenie jest płatne z góry, jednakże możemy podzielić je na raty</li>
+  </ul>
+  
+
 
       </div>
     </section>

@@ -61,6 +61,14 @@
   text-decoration-color: #00492E;
 }
 
+.phone {
+  text-decoration-line: none;
+  background-color: #00492E;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.1em;
+}
+
 .logo {
   width: 200px;
   @media only screen and (max-width: 500px) {
@@ -173,7 +181,7 @@
 }
 
 .services > h2 {
-  margin: 20px 0;
+  margin: 40px 0;
   position: relative;
   z-index: 1;
 
@@ -198,7 +206,7 @@
   row-gap: 20px;
   column-gap: 10px;
   align-self: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   @media only screen and (max-width: 500px) {
     display: flex;
     flex-direction: column;
@@ -206,11 +214,10 @@
 }
 
 .services-box {
-  border: 3px solid #CF9831;
-  border-radius: 50px;
-  padding: 10px;
-  width: 450px;
-  height: 450px;
+  border: 1px solid #CF9831;
+  padding-bottom: 10px;
+  width: 350px;
+  height: 350px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -224,12 +231,19 @@
 }
 
 .services-box > p {
-  padding: 10px;
-  text-justify: auto;
-  text-align: justify;
+  padding-top: 5px;
+  letter-spacing: 0.5px;
   font-size: 0.825em;
+  width: 70%;
+  margin: 0 auto;
+  line-height: 1.5em;
 }
 
+.services-box > img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 10px;
+}
 
 /* Prices */
 
@@ -243,10 +257,13 @@
 .prices-container {
   width: 80%;
   margin: 0 auto;
+  text-justify: auto;
+  text-align: justify;
 }
 
 .prices-container > p {
   margin-bottom: 10px;
+  
 }
 
 .prices-container > h3 {
@@ -276,14 +293,15 @@
 }
 
 .prices-container > ul {
-  list-style-type: none;
+  /* list-style-type: none; */
 }
 
 .prices-container > ul  li:before {
-  content: '\2014';
+  /* content: '\2014'; */
 }
 
-.prices-container > ol li {
+.prices-container > ol li { 
+  /* list-style-type: none; */
   margin-left: 5px;
 }
 

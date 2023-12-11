@@ -1,4 +1,4 @@
-import gabraImg from "../../assets/zdj_about.png"
+import gabraImg from "../assets/zdj_about.png"
 
 function About() {
   return (

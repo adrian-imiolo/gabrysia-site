@@ -1,5 +1,5 @@
 // import DropDownMenu from "../components/Navbar/DropDownMenu";
-import Logo from "../components/Navbar/Logo"
+import Logo from "../components/Logo"
 // import MenuItems from "../components/Navbar/MenuItems"
 import { Link } from 'react-scroll'
 
@@ -40,6 +40,9 @@ function Navbar() {
               </li>
               <li>
                 <Link activeClass="active" smooth spy to="contact">KONTAKT</Link>
+              </li>
+              <li>
+                <a className="phone" href={`tel:${+48514922121}`}>tel. 514 922 121</a>
               </li>
             </ul>
           </div>
