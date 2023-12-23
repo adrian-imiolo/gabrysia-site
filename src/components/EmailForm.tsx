@@ -11,13 +11,17 @@ interface CustomFormElements extends HTMLFormElement {
 export const EmailForm = () => {
   const form = useRef<CustomFormElements>(null);
   const [formError, setFormError] = useState<string>('');
-  const [formSuccess, setFormSuccess] = useState<boolean>(false);
+  const [formSuccess, setFormSuccess] = useState<boolean>
+  (false);
+  const [isLoading, setIsLoading] = useState<boolean>
+  (false);
 
   const sendEmail = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const isValid = validateForm();
     if (isValid && form.current) {
+        setIsLoading(true)
       try {
         await emailjs.sendForm('service_wl9duqh', 'template_loonslv', form.current, 'QZtmaFR3ernJv8kuK');
         clearForm();
@@ -25,6 +29,7 @@ export const EmailForm = () => {
       } catch (error) {
         setFormError("Ups, coś poszło nie tak :/");
       }
+      setIsLoading(false)
     }
   };
 
@@ -75,7 +80,7 @@ export const EmailForm = () => {
         <textarea name="message" placeholder="W czym mogę pomóc?" rows={3} required />
         <div className="form-error">{formError}</div>
         {formSuccess && <div className="form-success">Wiadomość została wysłana!</div>}
-        <input type="submit" value="Wyślij" className="submit-button" />
+        <input type="submit" value={isLoading ? "Wysyłanie..." : "Wyślij"} className="submit-button" />
       </form>
     </div>
   );
