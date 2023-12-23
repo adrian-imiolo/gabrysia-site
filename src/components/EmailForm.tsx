@@ -1,16 +1,23 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState, FormEvent } from 'react';
 import emailjs from '@emailjs/browser';
 
-export const EmailForm = () => {
-  const form = useRef();
-  const [formError, setFormError] = useState('');
-  const [formSuccess, setFormSuccess] = useState(false);
+interface CustomFormElements extends HTMLFormElement {
+  formName: HTMLInputElement;
+  phone: HTMLInputElement;
+  email: HTMLInputElement;
+  message: HTMLTextAreaElement;
+}
 
-  const sendEmail = async (e) => {
+export const EmailForm = () => {
+  const form = useRef<CustomFormElements>(null);
+  const [formError, setFormError] = useState<string>('');
+  const [formSuccess, setFormSuccess] = useState<boolean>(false);
+
+  const sendEmail = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const isValid = validateForm();
-    if (isValid) {
+    if (isValid && form.current) {
       try {
         await emailjs.sendForm('service_wl9duqh', 'template_loonslv', form.current, 'QZtmaFR3ernJv8kuK');
         clearForm();
@@ -22,12 +29,16 @@ export const EmailForm = () => {
   };
 
   const validateForm = () => {
-    const inputs = form.current.querySelectorAll('input, textarea');
+    if (!form.current) return false;
+
+    const inputs = form.current.elements;
     let isValid = true;
 
-    inputs.forEach((input) => {
-      if (input.required && !input.value.trim()) {
-        isValid = false;
+    Array.from(inputs).forEach((input) => {
+      if (isInput(input)) {
+        if ((input as HTMLInputElement | HTMLTextAreaElement).required && !(input as HTMLInputElement | HTMLTextAreaElement).value.trim()) {
+          isValid = false;
+        }
       }
     });
 
@@ -40,20 +51,28 @@ export const EmailForm = () => {
     return isValid;
   };
 
+  const isInput = (element: Element): element is HTMLInputElement | HTMLTextAreaElement => {
+    return element.tagName === 'INPUT' || element.tagName === 'TEXTAREA';
+  };
+
   const clearForm = () => {
-    const inputs = form.current.querySelectorAll('input, textarea');
-    inputs.forEach((input) => {
-      input.value = '';
+    if (!form.current) return;
+
+    const inputs = form.current.elements;
+    Array.from(inputs).forEach((input) => {
+      if (isInput(input)) {
+        (input as HTMLInputElement | HTMLTextAreaElement).value = '';
+      }
     });
   };
 
   return (
     <div className="form-container">
       <form ref={form} onSubmit={sendEmail} className="custom-form">
-        <input type="text" name="name" placeholder="Imię i nazwisko" required />
+        <input type="text" name="formName" placeholder="Imię i nazwisko" required />
         <input type="tel" name="phone" placeholder="Telefon" required />
         <input type="email" name="email" placeholder="Adres e-mail" required />
-        <textarea name="message" placeholder="W czym mogę pomóc?" rows="3" required />
+        <textarea name="message" placeholder="W czym mogę pomóc?" rows={3} required />
         <div className="form-error">{formError}</div>
         {formSuccess && <div className="form-success">Wiadomość została wysłana!</div>}
         <input type="submit" value="Wyślij" className="submit-button" />
@@ -61,3 +80,5 @@ export const EmailForm = () => {
     </div>
   );
 };
+
+export default EmailForm;
