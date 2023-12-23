@@ -1,8 +1,11 @@
+import { EmailForm } from "./EmailForm"
+
 function Contact() {
   return (
     <section className="contact">
-        <div className="contact-container">
             <h1>KONTAKT</h1>
+        <div className="contact-container">
+            <div className="contact-info">
             <h3>Kancelaria Adwokacka Adwokat Gabriela Urszulak</h3>
             <p>ul. Świebodzka 6 lok. 3, 50-046 Wrocław</p>
             <p>tel. 71 783 98 39</p>
@@ -11,9 +14,7 @@ function Contact() {
             <p>NIP 8982299067</p>
             <p>REGON 526686830</p>
             <br />
-            <div className="contact-info">
 
-            <h6>Szczegółowe informacje:</h6>
             <p>Kancelaria mieści się w ścisłym centrum Wrocławia, w bezpośrednim sąsiedztwie sądów, prokuratur,
 oraz Aresztu Śledczego.</p>
             <p>
@@ -33,6 +34,10 @@ Na spotkania zapraszam od poniedziałku do piątku między 9 a 17, najlepiej po 
 telefonicznym uzgodnieniu terminu. Dostosuję się również do innych zaproponowanych terminów i
 godzin spotkań.
 </p>
+            </div>
+            <div className="email-info">
+              <EmailForm />
+
             </div>
         </div>
     </section>
