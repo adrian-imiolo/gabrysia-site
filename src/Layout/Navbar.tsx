@@ -5,21 +5,6 @@ import { Link } from 'react-scroll'
 
 
 function Navbar() {
-  // const [windowSize, setWindowSize] = useState(
-  //   window.innerWidth,
-  // );
-
-  // useEffect(() => {
-  //   const handleWindowResize = () => {
-  //     setWindowSize(window.innerWidth);
-  //   };
-
-  //   window.addEventListener('resize', handleWindowResize);
-
-  //   return () => {
-  //     window.removeEventListener('resize', handleWindowResize);
-  //   };
-  // }, []);
   return (
         <nav className="navbar">
           <div>
@@ -46,7 +31,6 @@ function Navbar() {
               </li>
             </ul>
           </div>
-            {/* {windowSize > 576 ? <MenuItems /> : <DropDownMenu />}  */}
         </nav>
   )
 }

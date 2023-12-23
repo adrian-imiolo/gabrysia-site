@@ -313,29 +313,72 @@
 
 /* Contact */
 
-.contact-container {
+.contact > h1 {
   margin: 30px auto;
-  width: 70%;
   text-align: center;
-
 }
 
-.contact-container > h1 {
-  color: #00492E;
-  margin: 10px;
-}
-
-.contact-container > p {
-  margin: 15px;
-
+.contact-container {
+  display: flex;
+  padding: 1em 5em;
 }
 
 .contact-info {
-  text-align: left;
+  flex: 1;
 }
 
-.contact-info > h6 {
-  font-weight: 700;
-  font-size: 1.2em;
+.email-info {
+  flex: 1;
+}
+
+
+
+/* Form */
+
+.custom-form {
+  /* width: 70%;  */
+  margin: auto; 
+  text-align: center; 
+}
+
+.custom-form input,
+.custom-form textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: transparent;
   margin-bottom: 20px;
-} 
+  padding: 8px; /* Dodanie paddingu */
+  height: 40px; /* Wysokość inputów */
+  transition: background-color 0.3s; /* Dodanie efektu przejścia dla tła */
+}
+
+.custom-form input:focus,
+.custom-form textarea:focus {
+  outline: none;
+  background-color: rgba(200, 200, 200, 0.3); /* Przejście w kolorze szarym przy kliknięciu */
+}
+
+.custom-form textarea {
+  height: 120px; /* Wysokość textarea (3 razy wysokość pojedynczego inputa) */
+}
+
+.custom-form > .submit-button {
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: #00492E;
+  padding: 8px 16px; /* Mniejszy przycisk */
+  border: none; /* Usunięcie obramowania */
+  color: #fff; /* Kolor czcionki */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s; 
+  width: 60%;
+}
+
+.custom-form > .submit-button:hover {
+  background-color: #CF9831;
+  color: #fff; /* Kolor czcionki na hover */
+  
+}
+
