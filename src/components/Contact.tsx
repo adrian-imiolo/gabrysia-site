@@ -14,6 +14,7 @@ function Contact() {
             <p>NIP 8982299067</p>
             <p>REGON 526686830</p>
             <br />
+    <div>
 
             <p>Kancelaria mieści się w ścisłym centrum Wrocławia, w bezpośrednim sąsiedztwie sądów, prokuratur,
 oraz Aresztu Śledczego.</p>
@@ -34,6 +35,7 @@ Na spotkania zapraszam od poniedziałku do piątku między 9 a 17, najlepiej po 
 telefonicznym uzgodnieniu terminu. Dostosuję się również do innych zaproponowanych terminów i
 godzin spotkań.
 </p>
+    </div>
             </div>
             <div className="email-info">
               <EmailForm />

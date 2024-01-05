@@ -11,9 +11,7 @@ function About() {
         <div className="about-box">
           <h3>KILKA SŁÓW O MNIE</h3>
           <h5>Jak zostałam adwokatem?</h5>
-          <p>O byciu prawnikiem marzyłam od dziecka i konsekwentnie ten plan realizowałam. Bywały chwile
-          lepsze i gorsze, pojawiały się inne marzenia - jak zostanie geodetą, reporterką w dziale mody czy
-          krytykiem filmowym, ale prawo ostatecznie wygrało. Dziś prowadzę indywidualną kancelarię
+          <p>O byciu prawnikiem marzyłam od dziecka i konsekwentnie ten plan realizowałam. Dziś prowadzę indywidualną kancelarię
           adwokacką w centrum Wrocławia i realizuję dzięki temu dalszy etap zrodzonego ponad 20 lat temu
           marzenia - możliwość realnej pomocy innym.</p>
           <h5>Doświadczenie i umiejętności</h5>
