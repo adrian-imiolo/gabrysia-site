@@ -1,5 +1,5 @@
 import { EmailForm } from "./EmailForm"
-
+import { MapComponent } from "./Maps/MapComponent"
 function Contact() {
   return (
     <section className="contact">
@@ -42,6 +42,7 @@ godzin spotkań.
 
             </div>
         </div>
+            <MapComponent />
     </section>
   )
 }
