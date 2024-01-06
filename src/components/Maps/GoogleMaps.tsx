@@ -7,7 +7,6 @@ const DEFAULT_ZOOM = 15;
 
 export const GoogleMaps = ({
     locations,
-    className,
   }: {
     locations: ReadonlyArray<google.maps.LatLngLiteral>;
     className?: string;
