@@ -72,8 +72,8 @@ function Navbar() {
             </Link>
             <ul className="dropdown-content-mobile">
               {servicesData.map((service) => (
-                <div>
-                  <Link key={service.id} to={`/zakres-uslug#${service.path}`}>
+                <div key={service.id}>
+                  <Link to={`/zakres-uslug#${service.path}`}>
                     {service.name}
                   </Link>
                 </div>
