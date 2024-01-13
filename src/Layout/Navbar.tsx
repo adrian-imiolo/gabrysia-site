@@ -1,59 +1,101 @@
 import Logo from "../components/Logo";
-import { Link as ScrollLink } from 'react-scroll';
-import { Link } from 'react-router-dom';
-import { servicesData } from "../components/servicesData";
+import { Link } from "react-router-dom";
+import DropdownMenu from "../components/DropdownMenu";
 import { useState } from "react";
+import { servicesData } from "../components/servicesData";
 
 function Navbar() {
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
 
-  
-  // const scrollTo = (id: number | string) => {
-  //   scroll.scrollTo(id, {
-  //     duration: 1000,
-  //     smooth: 'easeInOutQuad',
-  //   });
-  // };
+  function scrollToTheTop() {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }
 
-  // const scrollToTop = () => {
-  //   scroll.scrollToTop({
-  //     duration: 1000,
-  //     smooth: 'easeInOutQuad',
-  //   });
-  // };
-
-  // const handleNavLinkClick = (id: number | string) => {
-  //   scrollTo(id);
-  //   scrollToTop();
-  // };
+  function toggleMobileMenu(): void {
+    setShowMobileMenu((prev) => !prev);
+  }
 
   return (
-    <nav className="navbar">
-      <div className="logo">
-        <Link to="/">
-          <Logo />
-        </Link>
-      </div>
-      <div>
+    <>
+      <nav className="navbar">
+        <div className="logo">
+          <Link to="/">
+            <Logo />
+          </Link>
+        </div>
+        <button className="burger-menu-button" onClick={toggleMobileMenu}>
+          xxx
+        </button>
+
         <ul className="nav-elements">
           <li>
-            <Link to="/">O MNIE</Link>
+            <Link to="/" onClick={scrollToTheTop}>
+              O MNIE
+            </Link>
+          </li>
+          <li className="dropdown">
+            <Link to={"/zakres-uslug"} onClick={scrollToTheTop}>
+              ZAKRES USŁUG
+            </Link>
+            <DropdownMenu />
           </li>
           <li>
-          <Link to="/services/details" >ZAKRES USŁUG</Link>
-          
+            <Link to="/honorarium" onClick={scrollToTheTop}>
+              HONORARIUM
+            </Link>
           </li>
           <li>
-            <Link to="/prices">HONORARIUM</Link>
+            <Link to="#kontakt">KONTAKT</Link>
           </li>
           <li>
-            <ScrollLink activeClass="active" smooth spy to="contact">KONTAKT</ScrollLink>
-          </li>
-          <li>
-            <a className="phone" href={`tel:${+48514922121}`}>tel. 514 922 121</a>
+            <a className="phone" href={`tel:${+48514922121}`}>
+              tel. 514 922 121
+            </a>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+
+      {showMobileMenu && (
+        <ul className="nav-elements-mobile">
+          <li>
+            <Link to="/" onClick={scrollToTheTop}>
+              O MNIE
+            </Link>
+          </li>
+          <li>
+            <Link to={"/zakres-uslug"} onClick={scrollToTheTop}>
+              ZAKRES USŁUG
+            </Link>
+            <ul className="dropdown-content-mobile">
+              {servicesData.map((service) => (
+                <div>
+                  <Link key={service.id} to={`/zakres-uslug#${service.path}`}>
+                    {service.name}
+                  </Link>
+                </div>
+              ))}
+            </ul>
+          </li>
+          <li>
+            <Link to="/honorarium" onClick={scrollToTheTop}>
+              HONORARIUM
+            </Link>
+          </li>
+          <li>
+            <Link to="#kontakt">KONTAKT</Link>
+          </li>
+          <li>
+            <a className="phone" href={`tel:${+48514922121}`}>
+              tel. 514 922 121
+            </a>
+          </li>
+        </ul>
+      )}
+    </>
   );
 }
 

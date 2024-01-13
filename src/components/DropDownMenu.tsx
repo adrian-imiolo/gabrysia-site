@@ -1,26 +1,18 @@
-// import { useState } from 'react';
-// import MenuIcon from '@mui/icons-material/Menu';
-// const DropDownMenu = () => {
-//   const [isOpen, setIsOpen] = useState(false);
+import { servicesData } from "./servicesData";
+import { Link } from "react-router-dom";
 
-//   const toggleMenu = () => {
-//     setIsOpen(!isOpen);
-//   };
+function DropdownMenu() {
+  return (
+    <ul className="dropdown-content">
+      {servicesData.map((service) => (
+        <li>
+          <Link key={service.id} to={`/zakres-uslug#${service.path}`}>
+            {service.name}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
+}
 
-//   return (
-//     <div className="dropdown">
-//       <button onClick={toggleMenu} className="dropdown-toggle">
-//         <MenuIcon />
-//       </button>
-//       {isOpen && (
-//         <div className="dropdown-menu">
-//           <a href="#about">Kancelaria</a>
-//           <a href="#services">Zakres Usług</a>
-//           {/* Other dropdown menu items */}
-//         </div>
-//       )}
-//     </div>
-//   );
-// };
-
-// export default DropDownMenu;
+export default DropdownMenu;
