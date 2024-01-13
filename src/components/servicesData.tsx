@@ -10,8 +10,12 @@ import prawoAdministracyjne from "../assets/servicesImg/prawo-administracyjne.pn
 
 export const servicesData = [
         {
+            id: 1,
+            
+            path: "prawo-cywilne",
     name: "Prawo cywilne",
     img: prawoCywilne,
+    img1: "",
     title: `Jednym z głównych obszarów moich zainteresowań oraz praktyki prawniczej jest szeroko
     rozumiane prawo cywilne. Prowadzę spory sądowe, ale także zajmuję się bieżącym doradztwem.`,
     content: `Prowadzę spory sądowe, ale także zajmuję się bieżącym doradztwem,
@@ -28,6 +32,8 @@ komunikacyjnych
 &bull; dotyczące kwestii zasiedzenia`
 },
     {
+        id: 2,
+        path: "prawo-karne",
         name: "Prawo karne",
         img: prawoKarne,
         title: `Posiadam również doświadczenie w prowadzeniu spraw wykroczeniowych oraz karnych w
@@ -44,7 +50,9 @@ komunikacyjnych
         &bull; sprawami o wydanie wyroku łącznego
         &bull; reprezentacją pokrzywdzonych (oskarżycieli)`
     },
-    {
+    {   
+        id: 3,
+        path: "prawo-rodzinne",
         name: "Prawo rodzinne",
         img: prawoRodzinne,
         title: `Kolejnym, jednym z głównych obszarów mojej praktyki są sprawy z zakresu prawa rodzinnego.
@@ -60,7 +68,9 @@ komunikacyjnych
         &bull; kontakty z dzieckiem (ustalenie, zmiana, zakazanie)
         &bull; ustalenie i zaprzeczenie pochodzenia dziecka`
     },
-    {
+    {   
+        id: 4,
+        path: "prawo-pracy",
         name: "Prawo pracy",
         img: prawoPracy,
         title: `Prowadzę również sprawy z zakresu prawa pracy, na etapie przedsądowym i sądowym, świadcząc
@@ -74,7 +84,9 @@ komunikacyjnych
         &bull; o ustalenie wypadku przy pracy
         &bull; mobbing`
     },
-    {
+    {   
+        id: 5,
+        path: "prawo-administracyjne",
         name: "Prawo administracyjne",
         img: prawoAdministracyjne,
         title: `Posiadam doświadczenie w prowadzeniu spraw przed organami władzy publicznej oraz sądami
@@ -85,7 +97,9 @@ komunikacyjnych
         pozwolenia na budowę, postępowanie legalizacyjne) oraz sprawy dot. cudzoziemców (m.in.
         legalizacja pobytu)`
     },
-    {
+    {   
+        id: 6,
+        path: "prawo-gospodarcze",
         name: "Prawo gospodarcze",
         img: prawoGospodarcze,
         title: `Świadczę pomoc prawną przedsiębiorcom prowadzącym jednoosobową działalność gospodarczą, jak

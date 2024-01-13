@@ -1,7 +1,9 @@
 import gabraImg from "../assets/zdj_about.png"
-
+import { servicesData } from "./servicesData"
+import { Link } from "react-router-dom"
 function About() {
   return (
+    <>
     <section className="about">
       <div className="about-container">
         <div className="about-box">
@@ -41,6 +43,25 @@ takich samych przypadków, a każdą z nich prowadzę z należytym zaangażowani
         </div>
       </div>
     </section>
+    <section className="services">
+      <h2>Główne obszary działania</h2>
+      <div className="services-container">
+        {servicesData.map((service, index) => (
+          <div key={index} className="services-box">
+            <img alt={service.name} src={service.img} />
+            <h3>{service.name}</h3>
+            <p>{service.title}</p>
+            <button>
+              <Link to="services/details">
+                WIĘCEJ
+              </Link>
+            </button>
+          </div>
+        ))}
+      </div>
+    </section>
+    </>
+
   )
 }
 

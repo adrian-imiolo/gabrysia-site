@@ -1,23 +1,27 @@
+import { Route, Routes } from 'react-router-dom';
+import Navbar from './Layout/Navbar';
+import About from './components/About';
+import Contact from './components/Contact';
+import Prices from './components/Prices';
+import ScrollToTop from './components/ScrollToTop';
+import Footer from './components/Footer';
+import ServicesDetails from './components/ServicesDetails';
 import './App.css'
-import Navbar from './Layout/Navbar'
-import About from './components/About'
-import Contact from './components/Contact'
-// import OnlineTips from './components/Navbar/OnlineTips'
-import Prices from './components/Prices'
-import Services from './components/Services'
-
 
 function App() {
-
   return (
     <>
-        <Navbar />
-        <About />
-        <Services />
-        <Prices />
-        <Contact />
+      <Navbar />
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<About />} />
+        <Route path="/prices" element={<Prices />} />
+        <Route path="services/details" element={<ServicesDetails />}/>
+      </Routes>
+      <Contact />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -390,3 +390,19 @@
   width: 100%;
   
 }
+
+
+/* Dropdowns list in services */ 
+
+.dropdown-container:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+}
+
+.dropdown-menu {
+  display: none;
+}

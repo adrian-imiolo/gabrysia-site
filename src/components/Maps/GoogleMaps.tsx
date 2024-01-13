@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { addSingleMarkers } from "./AddSingleMarkers";
 
 const DEFAULT_CENTER = { lat: 51.10490417480469, lng: 17.024499893188477 };
-const DEFAULT_ZOOM = 15;
+const DEFAULT_ZOOM = 16;
 
 
 export const GoogleMaps = ({
