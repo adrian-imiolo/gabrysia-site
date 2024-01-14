@@ -4,6 +4,12 @@ import prawoRodzinne from "../assets/servicesImg/prawo-rodzinne.png";
 import prawoPracy from "../assets/servicesImg/prawo-pracy.png";
 import prawoGospodarcze from "../assets/servicesImg/prawo-gospodarcze.png";
 import prawoAdministracyjne from "../assets/servicesImg/prawo-administracyjne.png";
+import administracyjne from "../assets/prawo/administracyjne";
+import cywilne from "../assets/prawo/cywilne";
+import gospodarcze from "../assets/prawo/gospodarcze";
+import karne from "../assets/prawo/karne";
+import pracy from "../assets/prawo/pracy";
+import rodzinne from "../assets/prawo/rodzinne";
 
 export const servicesData = [
   {
@@ -12,7 +18,7 @@ export const servicesData = [
     path: "prawo-cywilne",
     name: "Prawo cywilne",
     img: prawoCywilne,
-    img1: "",
+    serviceImg: cywilne,
     title: `Jednym z głównych obszarów moich zainteresowań oraz praktyki prawniczej jest szeroko
     rozumiane prawo cywilne. Prowadzę spory sądowe, ale także zajmuję się bieżącym doradztwem.`,
     content: `Prowadzę spory sądowe, ale także zajmuję się bieżącym doradztwem,
@@ -33,6 +39,7 @@ komunikacyjnych
     path: "prawo-karne",
     name: "Prawo karne",
     img: prawoKarne,
+    serviceImg: karne,
     title: `Posiadam również doświadczenie w prowadzeniu spraw wykroczeniowych oraz karnych w
         każdym stadium postępowania, tj na etapie postępowania przygotowawczego, sądowego oraz
         wykonawczego.`,
@@ -52,6 +59,7 @@ komunikacyjnych
     path: "prawo-rodzinne",
     name: "Prawo rodzinne",
     img: prawoRodzinne,
+    serviceImg: rodzinne,
     title: `Kolejnym, jednym z głównych obszarów mojej praktyki są sprawy z zakresu prawa rodzinnego.
         Prowadzę również sprawy dotyczące międzynarodowego prawa rodzinnego i udzielam porad
         prawnych w tym zakresie obcokrajowcom.`,
@@ -70,6 +78,7 @@ komunikacyjnych
     path: "prawo-pracy",
     name: "Prawo pracy",
     img: prawoPracy,
+    serviceImg: pracy,
     title: `Prowadzę również sprawy z zakresu prawa pracy, na etapie przedsądowym i sądowym, świadcząc
         pomoc prawną zarówno pracownikom, jak i pracodawcom.`,
     content: `W szczególności są to następujące sprawy:
@@ -86,6 +95,7 @@ komunikacyjnych
     path: "prawo-administracyjne",
     name: "Prawo administracyjne",
     img: prawoAdministracyjne,
+    serviceImg: administracyjne,
     title: `Posiadam doświadczenie w prowadzeniu spraw przed organami władzy publicznej oraz sądami
         administracyjnymi.`,
     content: `Sporządzam odwołania od decyzji administracyjnych, skargi do wojewódzkich
@@ -99,6 +109,7 @@ komunikacyjnych
     path: "prawo-gospodarcze",
     name: "Prawo gospodarcze",
     img: prawoGospodarcze,
+    serviceImg: gospodarcze,
     title: `Świadczę pomoc prawną przedsiębiorcom prowadzącym jednoosobową działalność gospodarczą, jak
         i spółkom prawa handlowego.`,
     content: `Jest to kompleksowa obsługa prawna, obejmująca: doradztwo prawne
