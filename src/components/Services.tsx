@@ -12,7 +12,7 @@ function ServicesDetails() {
           )}
 
           <div className="services-detail-img-mobile">
-            <img src={service.serviceImg} />
+            <img width="400px" src={service.serviceImg} />
           </div>
 
           <div className="services-detail-item">

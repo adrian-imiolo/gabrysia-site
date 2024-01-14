@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lato", sans-serif;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .hover-underline-animation {
@@ -95,6 +95,7 @@ a:hover {
   @media only screen and (max-width: 800px) {
     padding-bottom: 5px;
     display: block;
+    margin: 0 auto;
   }
 }
 
@@ -102,6 +103,7 @@ a:hover {
   color: #cf9831;
   padding: 2px 10px;
   text-decoration: none;
+  color:#cf9831;
 }
 
 .burger-menu-button {
@@ -313,6 +315,10 @@ a:hover {
   padding: 20px 30px;
 }
 
+.prices-container {
+  width: 70vw;
+}
+
 .prices-container > p {
   margin-bottom: 10px;
 }
@@ -338,7 +344,13 @@ a:hover {
 
 .prices-container > h4 {
   font-size: 1.2em;
-  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color:#00492e;
+}
+
+.prices-container hr {
+  color:#cf9831;
 }
 
 .prices-container > ol li {
@@ -408,16 +420,26 @@ a:hover {
   }
 }
 
+.email-info p {
+  font-size: 8px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  text-align: justify;
+}
+
 /* Form */
 
 .custom-form {
   /* width: 70%;  */
   margin: auto;
   text-align: center;
+  color: #fff;
 }
 
 .custom-form input,
 .custom-form textarea {
+  color: #fff;
+
   display: block;
   width: 100%;
   border: none;
@@ -433,6 +455,11 @@ a:hover {
 .custom-form textarea:focus {
   outline: none;
   background-color: rgba(200, 200, 200, 0.3);
+}
+
+.custom-form input::placeholder,
+.custom-form textarea::placeholder {
+  color: #fff;
 }
 
 .custom-form textarea {
@@ -539,17 +566,47 @@ a:hover {
 }
 
 
+/* services */
+
+/* .services-container {
+  padding: 10px 30px;
+}
+
+.services-container h3 {
+  font-size: 20px;
+  padding: 20px 0;
+  color:#cf9831;
+}
+
+.services-container p {
+  text-align: justify;
+} */
+
 .services-detail-item {
   width: 48%;
+  padding: 10px 40px;
+  text-align: center;
 
   @media screen and (max-width: 800px) {
     width: 100%;
   }
 }
 
+.services-detail-item h3 {
+  font-size: 20px;
+  padding: 20px 0;
+  color:#cf9831;
+}
+
+.services-detail-item p {
+  text-align: justify;
+}
+
 .services-detail-img {
   width: 48%;
   max-width: 400px;
+  align-self: center;
+  margin: 20px auto;
   @media screen and (max-width: 800px) {
  display: none;
     
@@ -559,6 +616,7 @@ a:hover {
 .services-detail-img-mobile {
   width: 100%;
   max-width: 400px;
+  margin: 0 auto;
 
   display: none;
   @media screen and (max-width: 800px) {

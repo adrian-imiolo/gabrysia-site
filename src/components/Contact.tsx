@@ -66,6 +66,19 @@ function Contact() {
         </div>
         <div className="email-info">
           <EmailForm />
+          <p>
+            "Zgodnie z wymogami ogólnego rozporządzenia o ochronie danych
+            osobowych (RODO), pragniemy poinformować, że: Administratorem
+            Państwa danych osobowych jest "Kancelaria Adwokacka Adwokat Gabriela
+            Urszulak" z siedzibą we Wrocławiu, ul. Świebodzka 6 lok. 3, 50-046
+            Wrocław. Państwa dane osobowe będą przetwarzane w celu realizacji
+            procesu ofertowania, zawarcia lub wykonywania umowy oraz w prawnie
+            uzasadnionym interesie administratora, w celu utrzymania kontaktów
+            biznesowych. Dane będą przechowywane przez okres niezbędny do
+            prowadzenia korespondencji, a następnie w celach archiwizacyjnych,
+            jednak nie dłużej niż rok. Przysługuje Państwu prawo do cofnięcia
+            zgody, a podanie danych jest dobrowolne."
+          </p>
         </div>
       </div>
       <MapComponent />

@@ -28,7 +28,7 @@ function Navbar() {
           </Link>
         </div>
         <button className="burger-menu-button" onClick={toggleMobileMenu}>
-          xxx
+          <p>cxxcxc</p>
         </button>
 
         <ul className="nav-elements">

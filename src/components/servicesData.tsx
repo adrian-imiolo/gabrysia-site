@@ -22,17 +22,8 @@ export const servicesData = [
     title: `Jednym z głównych obszarów moich zainteresowań oraz praktyki prawniczej jest szeroko
     rozumiane prawo cywilne. Prowadzę spory sądowe, ale także zajmuję się bieżącym doradztwem.`,
     content: `Prowadzę spory sądowe, ale także zajmuję się bieżącym doradztwem,
-    polegającym na sporządzaniu opinii prawnych czy przygotowywaniu umów. W szczególności są to sprawy:
-    &bull; o zapłatę
-    &bull; o wykonanie umów oraz sprawy związane z nienależytym ich wykonaniem
-    &bull; konsumenckie
-    &bull; o odszkodowanie i zadośćuczynienie, w tym również sprawy dotyczące wypadków
-komunikacyjnych
-&bull; o ochronę dóbr osobistych
-&bull; spadkowe (stwierdzenie nabycia spadku, dział spadku, zachowek, ważność testamentu)
-&bull; o ochronę prawa własności
-&bull; z zakresu współwłasności, w tym jej zniesienia
-&bull; dotyczące kwestii zasiedzenia`,
+    polegającym na sporządzaniu opinii prawnych czy przygotowywaniu umów. W szczególności są to sprawy: o zapłatę, o wykonanie umów oraz sprawy związane z nienależytym ich wykonaniem, konsumenckie, o odszkodowanie i zadośćuczynienie, w tym również sprawy dotyczące wypadków
+komunikacyjnych. O ochronę dóbr osobistych, spadkowe (stwierdzenie nabycia spadku, dział spadku, zachowek, ważność testamentu), o ochronę prawa własności, z zakresu współwłasności, w tym jej zniesienia oraz dotyczące kwestii zasiedzenia.`,
   },
   {
     id: 2,
@@ -44,15 +35,11 @@ komunikacyjnych
         każdym stadium postępowania, tj na etapie postępowania przygotowawczego, sądowego oraz
         wykonawczego.`,
     content: `W szczególności zajmuję się:
-        &bull; obroną podejrzanego na etapie postępowania przygotowawczego (zatrzymanie, przedstawienie
+      obroną podejrzanego na etapie postępowania przygotowawczego (zatrzymanie, przedstawienie
         zarzutów, tymczasowe aresztowanie oraz pozostałe środki zapobiegawcze, branie udziału w
-        czynnościach prowadzonych w toku dochodzenia lub śledztwa, składanie wniosków dowodowych)
-        &bull; obroną oskarżonego na dalszym etapie postępowania
-        &bull; obroną skazanego na etapie postępowania wykonawczego (sprawy dotyczące wstrzymania i
+        czynnościach prowadzonych w toku dochodzenia lub śledztwa, składanie wniosków dowodowych), obroną oskarżonego na dalszym etapie postępowania, obroną skazanego na etapie postępowania wykonawczego (sprawy dotyczące wstrzymania i
         odroczenia wykonania kary, przerwy w wykonaniu kary, warunkowe przedterminowe zwolnienie z
-        odbycia reszty kary, o odbywanie kary w systemie dozoru elektronicznego)
-        &bull; sprawami o wydanie wyroku łącznego
-        &bull; reprezentacją pokrzywdzonych (oskarżycieli)`,
+        odbycia reszty kary, o odbywanie kary w systemie dozoru elektronicznego). Sprawami o wydanie wyroku łącznego,  reprezentacją pokrzywdzonych (oskarżycieli)`,
   },
   {
     id: 3,
@@ -64,14 +51,7 @@ komunikacyjnych
         Prowadzę również sprawy dotyczące międzynarodowego prawa rodzinnego i udzielam porad
         prawnych w tym zakresie obcokrajowcom.`,
     content: `W szczególności są to następujące sprawy:
-        &bull; rozwód i separacja
-        &bull; podział majątku wspólnego małżonków
-        &bull; ustanowienie rozdzielności majątkowej małżeńskiej
-        &bull; władza rodzicielska (ograniczenie, pozbawienie, zawieszenie i przywrócenie)
-        &bull; zastępcza zgoda sądu opiekuńczego
-        &bull; alimentacja (ustalenie, uchylenie, obniżenie, podwyższenie)
-        &bull; kontakty z dzieckiem (ustalenie, zmiana, zakazanie)
-        &bull; ustalenie i zaprzeczenie pochodzenia dziecka`,
+        rozwód i separacja, podział majątku wspólnego małżonków, ustanowienie rozdzielności majątkowej małżeńskiej, władza rodzicielska (ograniczenie, pozbawienie, zawieszenie i przywrócenie), zastępcza zgoda sądu opiekuńczego, alimentacja (ustalenie, uchylenie, obniżenie, podwyższenie), kontakty z dzieckiem (ustalenie, zmiana, zakazanie), ustalenie i zaprzeczenie pochodzenia dziecka`,
   },
   {
     id: 4,
@@ -83,12 +63,7 @@ komunikacyjnych
         pomoc prawną zarówno pracownikom, jak i pracodawcom.`,
     content: `W szczególności są to następujące sprawy:
 
-        &bull; o zapłatę zaległego wynagrodzenia i ekwiwalentu za niewykorzystany urlop
-        &bull; o przywrócenie do pracy
-        &bull; o uznanie wypowiedzenia za bezskuteczne i zapłatę odszkodowania
-        &bull; o sprostowanie świadectwa pracy
-        &bull; o ustalenie wypadku przy pracy
-        &bull; mobbing`,
+        o zapłatę zaległego wynagrodzenia i ekwiwalentu za niewykorzystany urlop, o przywrócenie do pracy, o uznanie wypowiedzenia za bezskuteczne i zapłatę odszkodowania, o sprostowanie świadectwa pracy, o ustalenie wypadku przy pracy, mobbing`,
   },
   {
     id: 5,
