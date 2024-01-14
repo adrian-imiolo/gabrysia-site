@@ -2,7 +2,7 @@ import Logo from "../components/Logo";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { servicesData } from "../components/servicesData";
-import DropdownMenu from "../components/DropDownMenu";
+import DropdownMenu from "../components/DropdownMenu";
 
 function Navbar() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
