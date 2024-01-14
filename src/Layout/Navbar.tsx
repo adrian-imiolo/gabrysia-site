@@ -1,8 +1,8 @@
 import Logo from "../components/Logo";
 import { Link } from "react-router-dom";
-import DropdownMenu from "../components/DropdownMenu";
 import { useState } from "react";
 import { servicesData } from "../components/servicesData";
+import DropdownMenu from "../components/DropDownMenu";
 
 function Navbar() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -33,23 +33,37 @@ function Navbar() {
 
         <ul className="nav-elements">
           <li>
-            <Link to="/" onClick={scrollToTheTop}>
+            <Link
+              to="/"
+              onClick={scrollToTheTop}
+              className="hover-underline-animation"
+            >
               O MNIE
             </Link>
           </li>
           <li className="dropdown">
-            <Link to={"/zakres-uslug"} onClick={scrollToTheTop}>
+            <Link
+              to={"/zakres-uslug"}
+              onClick={scrollToTheTop}
+              className="hover-underline-animation"
+            >
               ZAKRES USŁUG
             </Link>
             <DropdownMenu />
           </li>
           <li>
-            <Link to="/honorarium" onClick={scrollToTheTop}>
+            <Link
+              to="/honorarium"
+              onClick={scrollToTheTop}
+              className="hover-underline-animation"
+            >
               HONORARIUM
             </Link>
           </li>
           <li>
-            <Link to="#kontakt">KONTAKT</Link>
+            <Link to="#kontakt" className="hover-underline-animation">
+              KONTAKT
+            </Link>
           </li>
           <li>
             <a className="phone" href={`tel:${+48514922121}`}>
