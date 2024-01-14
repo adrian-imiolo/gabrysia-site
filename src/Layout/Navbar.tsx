@@ -1,8 +1,8 @@
 import Logo from "../components/Logo";
 import { Link } from "react-router-dom";
-import DropdownMenu from "../components/DropdownMenu";
 import { useState } from "react";
 import { servicesData } from "../components/servicesData";
+import DropdownMenu from "../components/DropDownMenu";
 
 function Navbar() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
