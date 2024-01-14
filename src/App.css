@@ -36,6 +36,7 @@
 .content-container {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 1rem 0;
 }
 /* Navbar */
 
@@ -363,7 +364,6 @@ a:hover {
 
 .contact-container {
   display: flex;
-  padding: 1em 5em;
   justify-content: space-between;
   @media only screen and (max-width: 800px) {
     display: flex;
@@ -400,8 +400,12 @@ a:hover {
 
 .email-info {
   flex: 1;
-  padding: 20px;
   align-self: center;
+  @media screen and (max-width: 800px) {
+    padding: 15px;
+    align-self:auto;
+    
+  }
 }
 
 /* Form */
@@ -520,7 +524,6 @@ a:hover {
 .footer-el {
   font-size: 12px;
   text-align: center;
-  width: 20%;
 }
 
 .footer-el p a {
@@ -533,4 +536,42 @@ a:hover {
   height: "50vh";
   margin: "0 auto";
   filter: grayscale(1);
+}
+
+
+.services-detail-item {
+  width: 48%;
+
+  @media screen and (max-width: 800px) {
+    width: 100%;
+  }
+}
+
+.services-detail-img {
+  width: 48%;
+  @media screen and (max-width: 800px) {
+ display: none;
+    
+  }
+}
+
+.services-detail-img-mobile {
+  width: 100%;
+  display: none;
+  @media screen and (max-width: 800px) {
+    width: 100%;
+display: block;
+    
+  }
+
+}
+
+.services-details{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  @media screen and (max-width: 800px) {
+    display: block;
+  }
 }
