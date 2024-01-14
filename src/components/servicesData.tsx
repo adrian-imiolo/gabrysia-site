@@ -4,12 +4,12 @@ import prawoRodzinne from "../assets/servicesImg/prawo-rodzinne.png";
 import prawoPracy from "../assets/servicesImg/prawo-pracy.png";
 import prawoGospodarcze from "../assets/servicesImg/prawo-gospodarcze.png";
 import prawoAdministracyjne from "../assets/servicesImg/prawo-administracyjne.png";
-import administracyjne from "../assets/prawo/administracyjne";
-import cywilne from "../assets/prawo/cywilne";
-import gospodarcze from "../assets/prawo/gospodarcze";
-import karne from "../assets/prawo/karne";
-import pracy from "../assets/prawo/pracy";
-import rodzinne from "../assets/prawo/rodzinne";
+import administracyjne from "../assets/prawo/administracyjne.jpg";
+import cywilne from "../assets/prawo/cywilne.jpg";
+import gospodarcze from "../assets/prawo/gospodarcze.jpg";
+import karne from "../assets/prawo/karne.jpg";
+import pracy from "../assets/prawo/pracy.jpg";
+import rodzinne from "../assets/prawo/rodzinne.jpg";
 
 export const servicesData = [
   {
