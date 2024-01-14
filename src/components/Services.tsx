@@ -7,12 +7,12 @@ function ServicesDetails() {
         <div key={index} id={service.path} className="services-details">
           {index % 2 == 0 && (
             <div className="services-detail-img">
-              <img src="https://picsum.photos/200/300" />
+              <img width="400px" src={service.serviceImg} />
             </div>
           )}
 
           <div className="services-detail-img-mobile">
-            <img src="https://picsum.photos/200/300" />
+            <img src={service.serviceImg} />
           </div>
 
           <div className="services-detail-item">
@@ -22,7 +22,7 @@ function ServicesDetails() {
           </div>
           {index % 2 !== 0 && (
             <div className="services-detail-img">
-              <img src="https://picsum.photos/200/300" />
+              <img width="400px" src={service.serviceImg} />
             </div>
           )}
         </div>
