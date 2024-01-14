@@ -5,11 +5,9 @@ function DropdownMenu() {
   return (
     <ul className="dropdown-content">
       {servicesData.map((service) => (
-        <Link to={`/zakres-uslug#${service.path}`}>
-          <li key={service.id} className="hover-underline-animation">
-            {service.name}{" "}
-          </li>
-        </Link>
+        <li key={service.id}>
+          <Link to={`/zakres-uslug#${service.path}`}>{service.name}</Link>
+        </li>
       ))}
     </ul>
   );
