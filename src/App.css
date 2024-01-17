@@ -84,13 +84,15 @@ a:hover {
 }
 
 .nav-elements-mobile {
+  text-align: center;
   list-style: none;
   background-color: white;
-  width: 90vh;
+  width: 100%;
   display: none;
-  /* position: absolute; */
+  position: fixed;
   padding: 20px 20px;
   z-index: 10;
+
 
   @media only screen and (max-width: 800px) {
     padding-bottom: 5px;
@@ -98,6 +100,20 @@ a:hover {
     margin: 0 auto;
   }
 }
+
+
+
+/* .nav-elements-mobile > li .phone {
+  background-color: #fff;
+  position: relative;
+  top: -70px;
+  align-content: center;
+} */
+
+/* .nav-elements-mobile > li .phone img {
+  width: 30px;
+  height: 30px;
+} */
 
 .dropdown-content-mobile {
   color: #cf9831;
@@ -108,10 +124,18 @@ a:hover {
 
 .burger-menu-button {
   display: none;
+  border: none;
+  background-color: transparent;
+  margin-top: 8px;
   @media only screen and (max-width: 800px) {
     padding-bottom: 5px;
     display: block;
   }
+}
+
+.burger-menu-button img {
+  width: 20px;
+  height: 20px;
 }
 
 .active {
@@ -126,11 +150,37 @@ a:hover {
   font-size: 1.1em;
 }
 
+.phone-mobile {
+  display: none;
+
+  @media only screen and (max-width: 800px) {
+    display: inline-block;
+  }
+}
+
+.phone-mobile-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  @media only screen and (max-width: 500px) {
+    font-size: 12px;
+    gap: 10px;
+  }
+}
+
+.phone-mobile img {
+  width: 40px;
+  height: 40px;
+  @media only screen and (max-width: 500px) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
 .logo {
   width: 200px;
   @media only screen and (max-width: 500px) {
     width: 150px;
-    margin-top: 5px;
   }
 }
 

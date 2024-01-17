@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { servicesData } from "../components/servicesData";
 import DropdownMenu from "../components/DropDownMenu";
+import phone from "../assets/phone.png";
+import menu from "../assets/menu-hamburger.png";
 
 function Navbar() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -27,8 +29,14 @@ function Navbar() {
             <Logo />
           </Link>
         </div>
+        <a className="phone-mobile" href={`tel:${+48514922121}`}>
+          <div className="phone-mobile-container">
+            <img src={phone} alt="Phone icon" />
+            <h3>+48 514 922 121</h3>
+          </div>
+        </a>
         <button className="burger-menu-button" onClick={toggleMobileMenu}>
-          <p>cxxcxc</p>
+          <img src={menu} alt="Hamburger menu" />
         </button>
 
         <ul className="nav-elements">
@@ -74,40 +82,37 @@ function Navbar() {
       </nav>
 
       {showMobileMenu && (
-        <ul className="nav-elements-mobile">
-          <li>
-            <Link to="/" onClick={scrollToTheTop}>
-              O MNIE
-            </Link>
-          </li>
-          <li>
-            <Link to={"/zakres-uslug"} onClick={scrollToTheTop}>
-              ZAKRES USŁUG
-            </Link>
-            <ul className="dropdown-content-mobile">
-              {servicesData.map((service) => (
-                <div key={service.id}>
-                  <Link to={`/zakres-uslug#${service.path}`}>
-                    {service.name}
-                  </Link>
-                </div>
-              ))}
-            </ul>
-          </li>
-          <li>
-            <Link to="/honorarium" onClick={scrollToTheTop}>
-              HONORARIUM
-            </Link>
-          </li>
-          <li>
-            <Link to="#kontakt">KONTAKT</Link>
-          </li>
-          <li>
-            <a className="phone" href={`tel:${+48514922121}`}>
-              tel. 514 922 121
-            </a>
-          </li>
-        </ul>
+        <>
+          <ul className="nav-elements-mobile">
+            <li>
+              <Link to="/" onClick={scrollToTheTop}>
+                O MNIE
+              </Link>
+            </li>
+            <li>
+              <Link to={"/zakres-uslug"} onClick={scrollToTheTop}>
+                ZAKRES USŁUG
+              </Link>
+              <ul className="dropdown-content-mobile">
+                {servicesData.map((service) => (
+                  <div key={service.id}>
+                    <Link to={`/zakres-uslug#${service.path}`}>
+                      {service.name}
+                    </Link>
+                  </div>
+                ))}
+              </ul>
+            </li>
+            <li>
+              <Link to="/honorarium" onClick={scrollToTheTop}>
+                HONORARIUM
+              </Link>
+            </li>
+            <li>
+              <Link to="#kontakt">KONTAKT</Link>
+            </li>
+          </ul>
+        </>
       )}
     </>
   );
