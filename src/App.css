@@ -5,6 +5,7 @@
   font-family: 'PT Sans', sans-serif;
 }
 
+
 .hover-underline-animation {
   display: inline-block;
   position: relative;
@@ -29,9 +30,6 @@
   transform-origin: bottom left;
 }
 
-.app {
-  background-color: #00492e;
-}
 
 .content-container {
   max-width: 1440px;
@@ -77,6 +75,7 @@ a:hover {
   display: flex;
   list-style: none;
   gap: 1rem;
+  
   @media only screen and (max-width: 800px) {
     padding-bottom: 5px;
     display: none;
@@ -84,6 +83,7 @@ a:hover {
 }
 
 .nav-elements-mobile {
+  border-top: 2px solid #cf9831;
   text-align: center;
   list-style: none;
   background-color: white;
@@ -417,7 +417,9 @@ a:hover {
   background: no-repeat center/50% url("./assets/law_background_green.png");
   background-size: cover;
   color: #fff;
+  
 }
+
 
 .contact h1 {
   padding-top: 40px;
@@ -430,6 +432,7 @@ a:hover {
   @media only screen and (max-width: 800px) {
     display: flex;
     flex-direction: column;
+    padding: 30px;
   }
 }
 
@@ -484,6 +487,8 @@ a:hover {
   margin: auto;
   text-align: center;
   color: #fff;
+
+  
 }
 
 .custom-form input,
@@ -535,11 +540,7 @@ a:hover {
 
 /* Google Map */
 
-/* .map-component {
-  width: 100%;
-  
 
-} */
 
 /* Dropdown list in services */
 
@@ -577,7 +578,7 @@ a:hover {
   color: #cf9831;
 }
 
-/* Show the dropdown menu on hover */
+/* Show the dropdown mtenu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
   color: #cf9831;
@@ -587,14 +588,18 @@ a:hover {
 
 .footer {
   display: flex;
+  margin: 0;
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
   background-color: #00492e;
   color: #fff;
+  height: 80px;
   @media only screen and (max-width: 800px) {
     /* display: block; */
+    height: 200px;
     flex-direction: column;
+    padding: 20px 0px;
   }
 }
 
@@ -686,3 +691,4 @@ display: block;
     display: block;
   }
 }
+

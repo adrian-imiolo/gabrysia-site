@@ -17,6 +17,11 @@ function Navbar() {
     });
   }
 
+  function handleClick(): void {
+    scrollToTheTop();
+    toggleMobileMenu();
+  }
+
   function toggleMobileMenu(): void {
     setShowMobileMenu((prev) => !prev);
   }
@@ -85,12 +90,12 @@ function Navbar() {
         <>
           <ul className="nav-elements-mobile">
             <li>
-              <Link to="/" onClick={scrollToTheTop}>
+              <Link to="/" onClick={handleClick}>
                 O MNIE
               </Link>
             </li>
             <li>
-              <Link to={"/zakres-uslug"} onClick={scrollToTheTop}>
+              <Link to={"/zakres-uslug"} onClick={handleClick}>
                 ZAKRES USŁUG
               </Link>
               <ul className="dropdown-content-mobile">
@@ -104,12 +109,14 @@ function Navbar() {
               </ul>
             </li>
             <li>
-              <Link to="/honorarium" onClick={scrollToTheTop}>
+              <Link to="/honorarium" onClick={handleClick}>
                 HONORARIUM
               </Link>
             </li>
             <li>
-              <Link to="#kontakt">KONTAKT</Link>
+              <Link onClick={toggleMobileMenu} to="#kontakt">
+                KONTAKT
+              </Link>
             </li>
           </ul>
         </>

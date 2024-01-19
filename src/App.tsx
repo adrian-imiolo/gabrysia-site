@@ -11,7 +11,7 @@ import ScrollToHashElement from "./components/ScrollToHashElements";
 
 function App() {
   return (
-    <div className="">
+    <div className="app">
       <Navbar />
       <ScrollToHashElement />
       <ScrollToTop />
