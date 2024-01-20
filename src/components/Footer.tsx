@@ -1,4 +1,4 @@
-import Logo from "./Logo";
+import LogoWhite from "./LogoWhite";
 
 function Footer() {
   const currentDate = new Date();
@@ -11,7 +11,7 @@ function Footer() {
         <p>ul. Świebodzka 6 lok. 3, 50-046 Wrocław</p>
       </div>
       <div className="footer-el">
-        <Logo />
+        <LogoWhite />
       </div>
 
       <div className="footer-el">

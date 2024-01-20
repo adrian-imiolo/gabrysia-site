@@ -1,6 +1,6 @@
 import { EmailForm } from "./EmailForm";
 import { MapComponent } from "./Maps/MapComponent";
-import Logo from "./Logo";
+import LogoWhite from "./LogoWhite";
 
 function Contact() {
   return (
@@ -9,7 +9,7 @@ function Contact() {
       <div className="contact-container content-container">
         <div className="contact-info">
           <div className="contact-info-details">
-            <Logo />
+            <LogoWhite />
             <h3>Kancelaria Adwokacka Adwokat Gabriela Urszulak</h3>
             <p>ul. Świebodzka 6 lok. 3, 50-046 Wrocław</p>
             <p>
