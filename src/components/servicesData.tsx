@@ -27,6 +27,18 @@ komunikacyjnych. O ochronę dóbr osobistych, spadkowe (stwierdzenie nabycia spa
   },
   {
     id: 2,
+    path: "prawo-rodzinne",
+    name: "Prawo rodzinne",
+    img: prawoRodzinne,
+    serviceImg: rodzinne,
+    title: `Kolejnym, jednym z głównych obszarów mojej praktyki są sprawy z zakresu prawa rodzinnego.
+        Prowadzę również sprawy dotyczące międzynarodowego prawa rodzinnego i udzielam porad
+        prawnych w tym zakresie obcokrajowcom.`,
+    content: `W szczególności są to następujące sprawy:
+        rozwód i separacja, podział majątku wspólnego małżonków, ustanowienie rozdzielności majątkowej małżeńskiej, władza rodzicielska (ograniczenie, pozbawienie, zawieszenie i przywrócenie), zastępcza zgoda sądu opiekuńczego, alimentacja (ustalenie, uchylenie, obniżenie, podwyższenie), kontakty z dzieckiem (ustalenie, zmiana, zakazanie), ustalenie i zaprzeczenie pochodzenia dziecka`,
+  },
+  {
+    id: 3,
     path: "prawo-karne",
     name: "Prawo karne",
     img: prawoKarne,
@@ -41,18 +53,7 @@ komunikacyjnych. O ochronę dóbr osobistych, spadkowe (stwierdzenie nabycia spa
         odroczenia wykonania kary, przerwy w wykonaniu kary, warunkowe przedterminowe zwolnienie z
         odbycia reszty kary, o odbywanie kary w systemie dozoru elektronicznego). Sprawami o wydanie wyroku łącznego,  reprezentacją pokrzywdzonych (oskarżycieli)`,
   },
-  {
-    id: 3,
-    path: "prawo-rodzinne",
-    name: "Prawo rodzinne",
-    img: prawoRodzinne,
-    serviceImg: rodzinne,
-    title: `Kolejnym, jednym z głównych obszarów mojej praktyki są sprawy z zakresu prawa rodzinnego.
-        Prowadzę również sprawy dotyczące międzynarodowego prawa rodzinnego i udzielam porad
-        prawnych w tym zakresie obcokrajowcom.`,
-    content: `W szczególności są to następujące sprawy:
-        rozwód i separacja, podział majątku wspólnego małżonków, ustanowienie rozdzielności majątkowej małżeńskiej, władza rodzicielska (ograniczenie, pozbawienie, zawieszenie i przywrócenie), zastępcza zgoda sądu opiekuńczego, alimentacja (ustalenie, uchylenie, obniżenie, podwyższenie), kontakty z dzieckiem (ustalenie, zmiana, zakazanie), ustalenie i zaprzeczenie pochodzenia dziecka`,
-  },
+
   {
     id: 4,
     path: "prawo-pracy",

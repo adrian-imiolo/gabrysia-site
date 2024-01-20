@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { servicesData } from "../components/servicesData";
 import DropdownMenu from "../components/DropDownMenu";
-import phone from "../assets/phone.png";
 import menu from "../assets/menu-hamburger.png";
 
 function Navbar() {
@@ -36,7 +35,6 @@ function Navbar() {
         </div>
         <a className="phone-mobile" href={`tel:${+48514922121}`}>
           <div className="phone-mobile-container">
-            <img src={phone} alt="Phone icon" />
             <h3>+48 514 922 121</h3>
           </div>
         </a>

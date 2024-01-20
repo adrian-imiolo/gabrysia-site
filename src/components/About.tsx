@@ -1,4 +1,5 @@
-import gabraImg from "../assets/zdj_about.png";
+import gabraImg from "../assets/zdj_about.jpg";
+import Prices from "./Prices";
 import { servicesData } from "./servicesData";
 import { Link } from "react-router-dom";
 function About() {
@@ -64,13 +65,15 @@ function About() {
             <div key={index} className="services-box">
               <img alt={service.name} src={service.img} />
               <h3>{service.name}</h3>
-              <p>{service.title}</p>
               <button className="services-btn">
                 <Link to={`zakres-uslug#${service.path}`}>WIĘCEJ</Link>
               </button>
             </div>
           ))}
         </div>
+      </section>
+      <section>
+        <Prices />
       </section>
     </>
   );

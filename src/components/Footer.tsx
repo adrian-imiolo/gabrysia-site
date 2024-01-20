@@ -1,3 +1,5 @@
+import Logo from "./Logo";
+
 function Footer() {
   const currentDate = new Date();
   const currentYear = currentDate.getFullYear();
@@ -7,6 +9,9 @@ function Footer() {
       <div className="footer-el">
         <p>Kancelaria Adwokacka Adwokat Gabriela Urszulak</p>
         <p>ul. Świebodzka 6 lok. 3, 50-046 Wrocław</p>
+      </div>
+      <div className="footer-el">
+        <Logo />
       </div>
 
       <div className="footer-el">
