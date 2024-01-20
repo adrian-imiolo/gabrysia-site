@@ -66,7 +66,12 @@ function About() {
               <img alt={service.name} src={service.img} />
               <h3>{service.name}</h3>
               <button className="services-btn">
-                <Link to={`zakres-uslug#${service.path}`}>WIĘCEJ</Link>
+                <Link
+                  className="services-btn-a"
+                  to={`zakres-uslug#${service.path}`}
+                >
+                  WIĘCEJ
+                </Link>
               </button>
             </div>
           ))}
